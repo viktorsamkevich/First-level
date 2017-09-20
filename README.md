@@ -3,9 +3,15 @@
 1. Пройти по ссылке: https://viktorsamkevich.github.io/First-level/index.html.
 2. Открыть консоль.
 3. Результат будет выглядеть следующим образом:
+
 Result Task#1:
+
 ответ
+
 Result Task#2:
+
 ответ
+
 Result Task#3:
+
 ответ
