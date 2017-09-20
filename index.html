@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script type="text/javascript">
+		//Task #1
+		var arr1 = [1, 2, 3];
+		var arr2 = [4, 5, 6, 8];
+		var arr3 = [7, 8, 9];
+		var sumArray = [];
+		var maxLength = Math.max(arr1.length, arr2.length, arr3.length)
+
+		for (i = 0; i < maxLength; i++) {
+			if (arr1[i] === undefined || typeof(arr1[i]) === "string" || typeof(arr1[i]) === NaN) {
+				arr1[i] = 0;
+			}
+			if (arr2[i] === undefined || typeof(arr2[i]) === "string" || typeof(arr2[i]) === NaN) {
+				arr2[i] = 0;
+			}
+			if (arr3[i] === undefined || typeof(arr3[i]) === "string" || typeof(arr3[i]) === NaN) {
+				arr3[i] = 0;
+			}
+			sumArray[i] = Number(arr1[i]) + Number(arr2[i]) + Number(arr3[i]);
+		}
+		console.log("Result Task#1:");
+		console.log(sumArray);
+		
+		//Task #2
+		function shuffle(arr) {
+			return arr.sort(function() {return 0.5 - Math.random()});
+		}
+
+		var array = [9, 4, 6, 1, 2];
+		console.log("Result Task#2:");
+		console.log(shuffle(array));
+		console.log(shuffle(array));
+		console.log(shuffle(array));
+		console.log(shuffle(array));
+		console.log(shuffle(array));
+		console.log(shuffle(array));
+
+		//Task #3
+		var result1 = 2 + 2 * 9;
+		var result2 = 3 + 5 * 10 - (22+5) +3 + 10 / 2;
+		var result3 = 10 - 2 + 20 / (2 + 2);
+		console.log("Result Task#3:");
+		console.log("result1: " + result1);
+		console.log("result2: " + result2);
+		console.log("result3: " + result3);
+
+	</script>
+</body>
+</html>
